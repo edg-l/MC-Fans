@@ -40,7 +40,6 @@ public class FanBlock extends HorizontalFacingBlock implements BlockEntityProvid
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        if(world.isClient) return null;
         return checkType(type, Fans.FAN_BLOCK_ENTITY, FanBlockEntity::tick);
     }
 

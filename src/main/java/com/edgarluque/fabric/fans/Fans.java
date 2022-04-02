@@ -38,7 +38,7 @@ public class Fans implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(Fans.MOD_ID, "fan_block"),
                 new BlockItem(FAN_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
 
-        FAN_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, MOD_ID + "fan_block_entity",
+        FAN_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, MOD_ID + ":fan_block_entity",
                 FabricBlockEntityTypeBuilder.create(FanBlockEntity::new, FAN_BLOCK).build(null));
 
         ServerTickEvents.START_WORLD_TICK.register((world) -> {

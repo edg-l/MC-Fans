@@ -7,9 +7,14 @@
   "authors": [
     "Edgar Luque"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/edg-l/MC-Fans",
+    "sources": "https://github.com/edg-l/MC-Fans",
+    "issues": "https://github.com/edg-l/MC-Fans/issues",
+    "email": "contact+mcfans@edgarluque.com"
+  },
   "license": "AGPL-3.0",
-  "icon": "assets/Fans/icon.png",
+  "icon": "assets/fans/textures/block/fan_front.png",
   "environment": "*",
   "entrypoints": {
     "client": [
