@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fans:block/fan_block"
+    },
+    "facing=south": {
+      "model": "fans:block/fan_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fans:block/fan_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "fans:block/fan_block",
+      "y": 90
+    }
+  }
+}
