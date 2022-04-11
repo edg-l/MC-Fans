@@ -1,4 +1,6 @@
 {
   "item.fans.fan_block": "Fan",
-  "block.fans.fan_block": "Fan"
+  "block.fans.fan_block": "Fan",
+  "item.fans.fan_block_strong": "Strong Fan",
+  "block.fans.fan_block_strong": "Strong Fan"
 }

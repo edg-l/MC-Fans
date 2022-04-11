@@ -15,9 +15,14 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class FanBlock extends HorizontalFacingBlock implements BlockEntityProvider {
-    public FanBlock(Settings settings) {
+    private double pushSpeed;
+    private int reach;
+
+    public FanBlock(Settings settings, double pushSpeed, int reach) {
         super(settings);
         setDefaultState(this.getStateManager().getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+        this.pushSpeed = pushSpeed;
+        this.reach = reach;
     }
 
     @Override
@@ -34,7 +39,10 @@ public class FanBlock extends HorizontalFacingBlock implements BlockEntityProvid
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new FanBlockEntity(pos, state);
+        FanBlockEntity entity = new FanBlockEntity(pos, state);
+        entity.setPushSpeed(pushSpeed);
+        entity.setReach(reach);
+        return entity;
     }
 
     @Nullable
